@@ -5,7 +5,6 @@ body {
     font-family: 'Open Sans', sans-serif;
     background-color: black;
     margin: 0px;
-    color: white;
 }
 
 img {
@@ -13,6 +12,8 @@ img {
 	max-width: 375px;
 	height: auto;
 	margin: 10px;
+	padding-right: 1em;
+	padding-top: 1em;
 }
 
 .news-grid {
@@ -37,11 +38,13 @@ img {
 
 .news-display {
 	display: grid;
-	grid-template-columns: auto;
+	grid-template-columns: auto auto;
 	grid-gap: 5px;
 	background-color: white;
 	padding-left: 4em;
 	padding-top: 1em;
+	padding-bottom: 1em;
+	color: black;
 }
 
 .news-footer {
