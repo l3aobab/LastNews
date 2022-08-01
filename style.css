@@ -12,13 +12,13 @@ img {
 }
 
 .header {
-	background-color: #d0d0d6;
-	color: black;
+	background-color: #1878be;
+	color: white;
 	border-radius: 15px 15px 5px 5px;
 	padding: 2em;
-	border: 5px white solid;
 	margin-top: 15px;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
+	box-shadow: 4px 3px 3px #85bdff;
 }
 
 .header > h1 {
@@ -28,11 +28,11 @@ img {
 .new {
 	color: white;
 	background-color: black;
-	border: 3px white solid;
 	border-radius: 10px;
-	margin-bottom: 5px;
+	margin-bottom: 15px;
 	font-size: 15px;
 	padding: 10px;
+	box-shadow: 4px 3px 3px #a6acb3;
 }
 
 .content {
