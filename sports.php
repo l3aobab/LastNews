@@ -26,6 +26,19 @@
 		<div class="row">
 			<div class="col header">
 				<h1><b>LAST NEWS</b></h1>
+				<nav class="navbar navbar-expand">
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<div class="navbar-nav">
+							<a class="nav-link nav-item" href="index.php"><b>Inicio</b></a>
+							<a class="nav-link nav-item" href="business.php"><b>Economía</b></a>
+							<a class="nav-link nav-item active" href="sports.php"><b>Deportes</b></a>
+							<a class="nav-link nav-item" href="entertainment.php"><b>Cultura</b></a>
+							<a class="nav-link nav-item" href="science.php"><b>Ciencia</b></a>
+							<a class="nav-link nav-item" href="technology.php"><b>Tecnologia</b></a>
+							<a class="nav-link nav-item" href="health.php"><b>Salud</b></a>
+						</div>
+					</div>
+				</nav>
 			</div>
 		</div>
 		
