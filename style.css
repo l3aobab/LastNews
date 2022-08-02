@@ -15,6 +15,7 @@ img {
 	background-color: #1878be;
 	color: white;
 	border-radius: 15px 15px 5px 5px;
+	border-top: 2px solid black;
 	padding: 2em;
 	margin-top: 15px;
 	margin-bottom: 10px;
@@ -23,6 +24,11 @@ img {
 
 .header > h1 {
 	margin-left: 1em;
+}
+
+.navbar-expand {
+	border-bottom: 2px white solid;
+	border-radius: 1px;
 }
 
 .new {
@@ -35,9 +41,24 @@ img {
 	box-shadow: 4px 3px 3px #a6acb3;
 }
 
+.new:hover{
+	border-right: 4px white solid;
+	border-left: 4px white solid;
+	margin-left: 10px;
+	width: calc(100% - 10px);
+	cursor:pointer;
+}
+
 .content {
+	display: grid;
+	justify-content: left;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+.image {
 	display: grid;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 15px;
+	margin-bottom: 15px;	
 }

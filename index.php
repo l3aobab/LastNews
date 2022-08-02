@@ -6,6 +6,7 @@
 	<title>Last News</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="main.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body class="bg-black">
 	<?php 
@@ -36,7 +37,18 @@
 							<a class="nav-link nav-item" href="science.php"><b>Ciencia</b></a>
 							<a class="nav-link nav-item" href="technology.php"><b>Tecnologia</b></a>
 							<a class="nav-link nav-item" href="health.php"><b>Salud</b></a>
+							
 						</div>
+						<form id="form_search" name="form_search" method="post" action="search.php" class="form-inline">
+							<div class="form-group">
+								<div class="input-group">
+								<input class="form-control" placeholder="Buscar una noticia" type="text" name="customSearch">
+								<span class="input-group-btn">
+									<button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Buscar</button>
+								</span>
+								</div>
+							</div>
+						</form>
 					</div>
 				</nav>
 			</div>
@@ -47,14 +59,14 @@
 			foreach($response->articles as $news) {
 		?>
 		<div class="row new bg-dark">
-			<div class="col content">
+			<div class="col image">
 				<img src="<?php echo $news->urlToImage; ?>" alt="news-thumbnail">
 			</div>
 			<div class="col-8 content">
-				<h3><?php echo $news->title; ?></h3>
-				<h5><?php echo $news->description; ?></h5>
-				<h7><?php echo $news->publishedAt; ?>&nbsp;<a href="<?php echo $news->url; ?>">Seguir leyendo→</a></h7>
-				
+				<h7><b><?php echo str_replace('-','/',substr($news->publishedAt,0,10));?>&nbsp;-<a href="<?php echo $news->source->name;?>"><?php echo $news->source->name;?></a></b></h7>
+				<h4><?php echo substr($news->title,0,strpos($news->title,"-")); ?></h3>
+				<h6><?php echo $news->description; ?></h5>
+				<a href="<?php echo $news->url; ?>">Seguir leyendo→</a>
 			</div>
 		</div>
 		<?php 
