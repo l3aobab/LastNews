@@ -108,12 +108,7 @@ function technology() {
     return $res;
 }
 
-function userSearch() {
-    $search=$_POST['customSearch'];
-    $lowSearch=strtolower($search);
-    $finalSearch=str_replace(' ','=',$lowSearch);
-    
-
+function userSearch($finalSearch) {
     $ch = curl_init();
     $agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36';
     curl_setopt($ch, CURLOPT_URL, "https://newsapi.org/v2/everything?q=".$finalSearch."&language=es&apiKey=5b4f8bdf68e64633a1a878e95615e0af");

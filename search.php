@@ -1,20 +1,20 @@
 <?php 
-require_once "function.php"		
+require_once "function.php";
+$search=$_POST['customSearch'];
+$lowSearch=strtolower($search);
+$finalSearch=str_replace(' ','=',$lowSearch);
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Last News - Búsqueda</title>
+	<title>Last News - <?php echo $finalSearch;?></title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="main.css">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body class="bg-black">
-	<?php 
-		
-	?>
 	<div class="container">
 		<div class="row">
 			<div class="col header">
@@ -44,9 +44,8 @@ require_once "function.php"
 				</nav>
 			</div>
 		</div>
-		
 		<?php
-			$response = userSearch();
+			$response = userSearch($finalSearch);
 			$showNew =  showNews($response);
 		?>
 	</div>	

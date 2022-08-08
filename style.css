@@ -5,10 +5,11 @@ body {
 img {
 	width: calc(100% - 20px);
 	max-width: 375px;
-	height: auto;
+	max-height: 200px;
 	margin: 10px;
 	padding-right: 1em;
 	padding-top: 1em;
+	object-fit: contain;
 }
 
 .header {
@@ -24,6 +25,10 @@ img {
 
 .header > h1 {
 	margin-left: 1em;
+}
+
+.navbar-nav {
+	margin-right: 450px;
 }
 
 .navbar-expand {
