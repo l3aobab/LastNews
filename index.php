@@ -6,7 +6,7 @@ require_once "function.php"
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Last News</title>
+	<title>Last News - Inicio</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="main.css">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -24,9 +24,8 @@ require_once "function.php"
 							<a class="nav-link nav-item" href="sports.php"><b>Deportes</b></a>
 							<a class="nav-link nav-item" href="entertainment.php"><b>Cultura</b></a>
 							<a class="nav-link nav-item" href="science.php"><b>Ciencia</b></a>
-							<a class="nav-link nav-item" href="technology.php"><b>Tecnologia</b></a>
+							<a class="nav-link nav-item" href="technology.php"><b>Tecnología</b></a>
 							<a class="nav-link nav-item" href="health.php"><b>Salud</b></a>
-							
 						</div>
 						<form id="form_search" name="form_search" method="post" action="search.php" class="form-inline">
 							<div class="form-group">
@@ -42,7 +41,6 @@ require_once "function.php"
 				</nav>
 			</div>
 		</div>
-		
 		<?php
 			$response = topHeadlines();
 			$showNew =  showNews($response);
