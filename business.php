@@ -62,8 +62,8 @@
 				<img src="<?php echo $news->urlToImage; ?>" alt="news-thumbnail">
 			</div>
 			<div class="col-8 content">
-				<h7><b><?php echo str_replace('-','/',substr($news->publishedAt,0,10));?>&nbsp;-&nbsp;<a href="<?php echo $news->source->name;?>"><?php echo $news->source->name;?></a></b></h7>
-				<h4><?php echo $news->title; ?></h3>
+				<h7><b><?php echo str_replace('-','/',substr($news->publishedAt,0,10));?>&nbsp;-<a href="<?php echo $news->source->name;?>"><?php echo $news->source->name;?></a></b></h7>
+				<h4><?php echo substr($news->title,0,strpos($news->title,"-")); ?></h3>
 				<h6><?php echo $news->description; ?></h5>
 				<a href="<?php echo $news->url; ?>">Seguir leyendo→</a>
 			</div>
