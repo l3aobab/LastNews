@@ -9,12 +9,16 @@ require_once "function.php"
 	<title>Last News - Economía</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="main.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@1&family=Roboto+Serif:opsz,wght@8..144,500&family=Roboto+Slab&family=Rokkitt&display=swap" rel="stylesheet">
 </head>
 <body class="bg-black">
 	<div class="container">
 		<div class="row">
 			<div class="col header">
-				<h1><b>LAST NEWS</b></h1>
+				<h1>Last News</h1>
 				<nav class="navbar navbar-expand">
 					<div class="collapse navbar-collapse" id="navbarNav">
 						<div class="navbar-nav">
