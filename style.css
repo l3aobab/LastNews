@@ -104,3 +104,15 @@ img {
 	align-items: center;
 	margin-bottom: 15px;	
 }
+
+.noContent {
+	color: white;
+	background-color: black;
+	border-radius: 10px;
+	margin-bottom: 15px;
+	font-size: 15px;
+	padding: 10px;
+	box-shadow: 4px 3px 3px #a6acb3;
+	font-family: 'Roboto Serif', serif;;
+}
+

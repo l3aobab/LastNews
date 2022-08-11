@@ -46,8 +46,18 @@ $finalSearch=str_replace(' ','=',$lowSearch);
 			</div>
 		</div>
 		<?php
-			$response = userSearch($finalSearch);
-			$showNew =  showSearchNews($response);
+			if(empty($search)) {
+				error_reporting(0);
+				?>
+				<div class="row bg-dark noContent">
+					<h4>No se han encontrado resultados para su búsqueda</h4>
+				</div>
+				<?php 
+			}
+			else {
+				$response = userSearch($finalSearch);
+				$showNew =  showSearchNews($response);
+			}
 		?>
 	</div>	
 </body>
