@@ -30,15 +30,22 @@ img {
 	font-size: 60px;
 }
 
-.navbar-nav {
-	margin-right: 450px;
-	font-family: 'Rokkitt', serif;
-	font-size: 20px;
+.navbarBackground > nav {
+	background-color: white;
+	border-radius: 10px;
 }
 
-.navbar-expand {
-	border-bottom: 2px white solid;
-	border-radius: 1px;
+.navbar-nav {
+	margin-right: 400px;
+	font-family: 'Rokkitt', serif;
+	font-size: 20px;
+	margin-left: 10px;
+}
+
+.active {
+	border: rgba(0, 0, 0, .05) 1px solid;
+	border-radius: 2px;
+	background-color: #D7DBDD;
 }
 
 .new {

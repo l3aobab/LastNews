@@ -17,6 +17,24 @@ function showNews($response) {
     }
 }
 
+function showSearchNews($response) {
+    foreach($response->articles as $news) {
+        ?>
+		<div class="row new bg-dark">
+			<div class="col image">
+				<img src="<?php echo $news->urlToImage; ?>" alt="news-thumbnail">
+			</div>
+			<div class="col-8 content">
+				<h7><b><?php echo $news->source->name;?></b>&nbsp;- <?php echo str_replace('-','/',substr($news->publishedAt,0,10));?></h7>
+				<h4><?php echo $news->title; ?></h4>
+				<h6>&nbsp;&nbsp;<?php echo $news->description; ?></h6>
+				<a href="<?php echo $news->url; ?>">Seguir leyendo→</a>
+			</div>
+		</div>
+		<?php 
+    }
+}
+
 function topHeadlines() {
     $ch = curl_init();
     $agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36';
