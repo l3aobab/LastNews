@@ -31,12 +31,10 @@ require_once "function.php"
 								<a class="nav-link nav-item" href="technology.php"><b>Tecnología</b></a>
 								<a class="nav-link nav-item active" href="health.php"><b>Salud</b></a>
 							</div>
-							<div class="container-fluid">
-								<form name="form_search" method="post" action="search.php" class="d-flex">
-									<input class="form-control mr-sm-2 search-bar" placeholder="Buscar una noticia" type="text" name="customSearch">
-									<button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Buscar</button>
-								</form>
-							</div>
+							<form name="form_search" method="post" action="search.php" class="d-flex">
+								<input class="form-control me-2 search-bar" placeholder="Buscar una noticia" type="text" name="customSearch">
+								<button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Buscar</button>
+							</form>
 						</div>
 					</nav>
 				</div>

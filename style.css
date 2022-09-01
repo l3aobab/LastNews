@@ -59,7 +59,6 @@ img {
 }
 
 .new:hover{
-	border-right: 4px white solid;
 	border-left: 4px white solid;
 	margin-left: 10px;
 	cursor:pointer;

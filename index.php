@@ -19,20 +19,24 @@ require_once "function.php"
 			<div class="col header">
 				<h1>Last News</h1>
 				<div class="navbarBackground">
-					<nav class="navbar navbar-expand">
-						<div class="collapse navbar-collapse" id="navbarNav">
-							<div class="navbar-nav">
-								<a class="nav-link nav-item active" href="index.php"><b>Inicio</b></a>
-								<a class="nav-link nav-item" href="business.php"><b>Economía</b></a>
-								<a class="nav-link nav-item" href="sports.php"><b>Deportes</b></a>
-								<a class="nav-link nav-item" href="entertainment.php"><b>Cultura</b></a>
-								<a class="nav-link nav-item" href="science.php"><b>Ciencia</b></a>
-								<a class="nav-link nav-item" href="technology.php"><b>Tecnología</b></a>
-								<a class="nav-link nav-item" href="health.php"><b>Salud</b></a>
-							</div>
-							<div class="container-fluid">
+					<nav class="navbar navbar-expand-lg navbar-light bg-light">
+						<div class="container-fluid">
+							<a class="navbar-brand" href="#">Hidden brand</a>
+							<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse" id="navbar">
+								<ul class="navbar-nav">
+									<li class="nav-item"><a class="nav-link active" href="index.php"><b>Inicio</b></a></li>
+									<li class="nav-item"><a class="nav-link" href="business.php"><b>Economía</b></a></li>
+									<li class="nav-item"><a class="nav-link" href="sports.php"><b>Deportes</b></a></li>
+									<li class="nav-item"><a class="nav-link" href="entertainment.php"><b>Cultura</b></a></li>
+									<li class="nav-item"><a class="nav-link" href="science.php"><b>Ciencia</b></a></li>
+									<li class="nav-item"><a class="nav-link" href="technology.php"><b>Tecnología</b></a></li>
+									<li class="nav-item"><a class="nav-link" href="health.php"><b>Salud</b></a></li>
+								</ul>
 								<form name="form_search" method="post" action="search.php" class="d-flex">
-									<input class="form-control mr-sm-2 search-bar" placeholder="Buscar una noticia" type="text" name="customSearch">
+									<input class="form-control me-2 search-bar" placeholder="Buscar una noticia" type="text" name="customSearch">
 									<button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Buscar</button>
 								</form>
 							</div>
