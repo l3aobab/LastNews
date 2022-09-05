@@ -9,7 +9,7 @@ $finalSearch=str_replace(' ','=',$lowSearch);
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Last News - <?php echo $finalSearch;?></title>
+	<title>Last News - <?php echo $search;?></title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="main.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,7 +44,16 @@ $finalSearch=str_replace(' ','=',$lowSearch);
 			</div>
 		</div>
 		<?php
+			$checkSearch=str_replace(' ','',$lowSearch);
 			if(empty($search)) {
+				error_reporting(0);
+				?>
+				<div class="row bg-dark noContent">
+					<h4>No se han encontrado resultados para su búsqueda</h4>
+				</div>
+				<?php 
+			}
+			elseif(!preg_match('/^[A-Za-z0-9]+$/', $checkSearch)) {
 				error_reporting(0);
 				?>
 				<div class="row bg-dark noContent">
